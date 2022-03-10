@@ -78,7 +78,8 @@ p {
   justify-content: center;
   transition: all 150ms ease-in-out;
 }
-.img-wrapper:hover {
+.img-wrapper:hover,
+.img-wrapper:active {
   cursor: pointer;
   box-shadow: var(--neonGreen) 0px 0px 20px 1px;
 }
