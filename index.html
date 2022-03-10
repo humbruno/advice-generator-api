@@ -27,8 +27,25 @@
     />
   </head>
   <body>
-    <h1 class="advice__id"></h1>
-    <p class="advice__description"></p>
+    <main class="card">
+      <h1 class="advice__id"></h1>
+      <p class="advice__description"></p>
+      <picture>
+        <source
+          srcset="/images/pattern-divider-desktop.svg"
+          media="(min-width: 768px)"
+          aria-hidden="true"
+        />
+        <img
+          src="/images/pattern-divider-mobile.svg"
+          alt=""
+          aria-hidden="true"
+        />
+      </picture>
+      <div class="img-wrapper">
+        <img src="images/icon-dice.svg" alt="Generate new advice" />
+      </div>
+    </main>
 
     <script src="app/js/script.js"></script>
   </body>

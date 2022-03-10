@@ -1,5 +1,6 @@
 const id = document.querySelector(".advice__id");
 const description = document.querySelector(".advice__description");
+const newAdvice = document.querySelector(".img-wrapper");
 
 async function advice() {
   try {
@@ -17,3 +18,7 @@ async function advice() {
 }
 
 advice();
+
+newAdvice.addEventListener("click", () => {
+  advice();
+});

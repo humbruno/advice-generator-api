@@ -1,7 +1,6 @@
 :root {
   --lightCyan: hsl(193, 38%, 86%);
   --neonGreen: hsl(150, 100%, 66%);
-  --grayishBlue: hsl(217, 19%, 38%);
   --darkGrayishBlue: hsl(217, 19%, 24%);
   --darkBlue: hsl(218, 23%, 16%);
 }
@@ -34,4 +33,52 @@ body {
   margin: 0;
   font-family: "Manrope", sans-serif;
   font-size: 1.75rem; /*28px*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--darkBlue);
+}
+
+.card {
+  max-width: 550px;
+  text-align: center;
+  background-color: var(--darkGrayishBlue);
+  border-radius: 10px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  position: relative;
+}
+
+h1 {
+  color: var(--neonGreen);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+p {
+  color: var(--lightCyan);
+  transition: all 250ms ease-in-out;
+}
+
+.img-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  background-color: var(--neonGreen);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 150ms ease-in-out;
+}
+.img-wrapper:hover {
+  cursor: pointer;
+  box-shadow: var(--neonGreen) 0px 0px 20px 1px;
 }
